@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon - dotLogic Labs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Noto Sans', sans-serif;
+            background: linear-gradient(120deg, #0c0c2d 50%, #1ca053 50%);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            padding: 2rem;
+            position: relative;
+            letter-spacing: 0.05em;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(120deg, #0c0c2d 50%, #1ca053 50%);
+            filter: blur(8px);
+            z-index: -1;
+        }
+
+        header {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+        }
+
+        nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        h1 {
+            font-size: 7rem;
+            margin: 0.1em 0;
+            font-weight: 400;
+            line-height: 0.9;
+            letter-spacing: 0.02em;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+
+        .content {
+            max-width: 500px;
+        }
+
+        .input-container {
+            position: relative;
+            margin-top: 1rem;
+            border-width: 6px;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            padding: 0.8rem;
+            padding-right: 120px;
+            border: none;
+            border-radius: 20px;
+            font-size: 1rem;
+            box-sizing: border-box;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="email"]::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        input[type="email"]:focus {
+            outline: none;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+
+        .signup-btn {
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 0.6rem 1.2rem;
+            border: none;
+            border-radius: 15px;
+            background: white;
+            color: #0c0c2d;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 0;
+            font-size: 0.9rem;
+        }
+
+        .signup-btn:hover {
+            background: #f0f0f0;
+        }
+
+        button {
+            margin-top: 1rem;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 20px;
+            background: white;
+            color: #0c0c2d;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 10px;
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <header>dotLogic Labs</header>
+    <nav><a href="#">Home</a></nav>
+
+    <div class="content">
+        <p>We're almost there</p>
+        <h1>Coming <br> Soon</h1>
+        <p>Join our newsletter to be the first to know when dotLogic Labs launches and receive updates on the latest in
+            technology and AI.</p>
+        <form>
+            <div class="input-container">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="signup-btn">Sign Up</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div style="margin-top: 0.5rem;">Questions? Reach out to us at <a href="mailto:hello@dotlogiclabs.com"
+                style="color: white; text-decoration: underline;">hello@dotlogiclabs.com</a></div>
+        <div>© 2025 dotLogic Labs. Powered by You.</div>
+    </footer>
+</body>
+
+</html>
